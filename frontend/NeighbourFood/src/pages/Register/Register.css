@@ -1,0 +1,155 @@
+.register-page{
+min-height:100vh;
+display:grid;
+grid-template-columns:1fr 1fr;
+background:#F8FBF8;
+}
+
+.register-left{
+display:flex;
+justify-content:center;
+align-items:center;
+padding:60px;
+}
+
+.register-left img{
+width:100%;
+max-width:520px;
+}
+
+.register-right{
+display:flex;
+justify-content:center;
+align-items:center;
+padding:60px;
+}
+
+.register-card{
+width:430px;
+background:white;
+padding:50px;
+border-radius:14px;
+box-shadow:0 15px 40px rgba(0,0,0,.06);
+}
+
+.register-card h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.register-card p{
+color:#6B7280;
+margin-bottom:30px;
+line-height:1.6;
+}
+
+.register-card form{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.register-card input,
+.register-card select{
+padding:16px;
+border:1px solid #E5E7EB;
+border-radius:6px;
+font-size:15px;
+background:white;
+}
+
+.register-card input:focus,
+.register-card select:focus{
+outline:none;
+border-color:#2D6A4F;
+}
+
+.register-card button{
+padding:16px;
+background:#2D6A4F;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+}
+
+.register-card button:hover{
+background:#245740;
+}
+
+.register-links{
+margin-top:22px;
+display:flex;
+justify-content:center;
+gap:8px;
+}
+
+.register-links a{
+text-decoration:none;
+color:#2D6A4F;
+font-weight:600;
+}
+
+@media(max-width:900px){
+
+.register-page{
+grid-template-columns:1fr;
+}
+
+.register-left{
+display:none;
+}
+
+}
+
+.password-field{
+position:relative;
+width:100%;
+}
+
+.password-field input{
+width:100%;
+padding-right:50px;
+}
+
+.show-password-btn{
+position:absolute;
+right:15px;
+top:50%;
+transform:translateY(-50%);
+background:none !important;
+border:none !important;
+box-shadow:none !important;
+outline:none;
+padding:0;
+margin:0;
+width:auto;
+height:auto;
+display:flex;
+align-items:center;
+justify-content:center;
+cursor:pointer;
+color:#666;
+font-size:18px;
+}
+
+.show-password-btn:hover{
+background:none !important;
+color:#2563eb;
+}
+
+.show-password-btn:focus{
+outline:none;
+box-shadow:none;
+}
+
+.password-note{
+display:block;
+margin-top:6px;
+margin-bottom:12px;
+font-size:12px;
+color:#666;
+line-height:1.4;
+}

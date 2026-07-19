@@ -1,0 +1,26 @@
+.filter-bar{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-bottom:35px;
+}
+
+.filter-bar button{
+padding:12px 24px;
+border:none;
+background:#F4F4F4;
+border-radius:8px;
+cursor:pointer;
+transition:.3s;
+font-weight:500;
+}
+
+.filter-bar button:hover{
+background:#4F772D;
+color:white;
+}
+
+.active-filter{
+background:#4F772D!important;
+color:white;
+}

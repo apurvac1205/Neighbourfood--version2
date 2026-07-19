@@ -1,0 +1,318 @@
+.landing{
+background:
+radial-gradient(circle at top right,#EAF7EF 0%,transparent 30%),
+radial-gradient(circle at bottom left,#F1FFF5 0%,transparent 35%),
+#F8FBF8;
+min-height:100vh;
+overflow:hidden;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:70px 0 90px;
+gap:70px;
+}
+
+.hero-left{
+flex:1;
+}
+
+.hero-right{
+flex:1;
+display:flex;
+justify-content:flex-end;
+}
+
+.hero-right img{
+width:100%;
+max-width:540px;
+animation:float 5s ease-in-out infinite;
+}
+
+.hero-tag{
+display:inline-flex;
+align-items:center;
+padding:10px 18px;
+border-radius:500px;
+background:#EAF7EF;
+color:#2D6A4F;
+font-size:14px;
+font-weight:500;
+margin-bottom:24px;
+}
+
+.hero-left h1{
+font-size:60px;
+line-height:1.15;
+font-weight:700;
+color:#1F2937;
+margin-bottom:22px;
+max-width:600px;
+}
+
+.hero-left p{
+font-size:18px;
+line-height:1.8;
+color:#6B7280;
+max-width:560px;
+margin-bottom:35px;
+}
+
+.hero-buttons{
+display:flex;
+align-items:center;
+gap:18px;
+}
+
+.primary-btn{
+padding:15px 34px;
+background:#2D6A4F;
+color:white;
+border:none;
+border-radius:500px;
+font-size:16px;
+font-weight:600;
+transition:.3s;
+box-shadow:0 10px 30px rgba(45,106,79,.18);
+}
+
+.primary-btn:hover{
+background:#245740;
+transform:translateY(-3px);
+}
+
+.secondary-btn{
+padding:15px 34px;
+background:white;
+border:1px solid #E5E7EB;
+border-radius:500px;
+font-size:16px;
+font-weight:600;
+transition:.3s;
+}
+
+.secondary-btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.section-heading{
+text-align:center;
+margin-bottom:65px;
+}
+
+.section-heading h2{
+font-size:40px;
+margin-bottom:12px;
+color:#1F2937;
+}
+
+.section-heading p{
+color:#6B7280;
+font-size:17px;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.step-card{
+background:white;
+padding:35px;
+border-radius:10px;
+box-shadow:0 10px 35px rgba(0,0,0,.06);
+transition:.3s;
+}
+
+.step-card:hover{
+transform:translateY(-6px);
+}
+
+.step-icon{
+width:62px;
+height:62px;
+border-radius:8px;
+background:#EAF7EF;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:26px;
+color:#2D6A4F;
+margin-bottom:24px;
+}
+
+.step-card h3{
+margin-bottom:14px;
+font-size:22px;
+}
+
+.step-card p{
+color:#6B7280;
+line-height:1.7;
+}
+
+.features-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.feature-card{
+background:white;
+padding:35px;
+border-radius:10px;
+box-shadow:0 10px 35px rgba(0,0,0,.06);
+transition:.3s;
+text-align:center;
+}
+
+.feature-card:hover{
+transform:translateY(-6px);
+}
+
+.feature-icon{
+width:72px;
+height:72px;
+background:#EAF7EF;
+border-radius:10px;
+display:flex;
+justify-content:center;
+align-items:center;
+margin:auto;
+margin-bottom:22px;
+font-size:30px;
+color:#2D6A4F;
+}
+
+.feature-card h3{
+margin-bottom:14px;
+}
+
+.feature-card p{
+line-height:1.7;
+color:#6B7280;
+}
+
+.impact-section{
+margin-top:90px;
+}
+
+.impact-card{
+background:#2D6A4F;
+color:white;
+border-radius:12px;
+padding:55px;
+display:flex;
+justify-content:space-around;
+text-align:center;
+}
+
+.impact-card h2{
+font-size:46px;
+margin-bottom:10px;
+}
+
+.cta-section{
+padding:90px 0;
+}
+
+.cta-card{
+background:white;
+padding:60px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 10px 35px rgba(0,0,0,.06);
+}
+
+.cta-card h2{
+font-size:38px;
+margin-bottom:20px;
+}
+
+.cta-card p{
+color:#6B7280;
+margin-bottom:35px;
+}
+
+footer{
+padding:35px 0;
+border-top:1px solid #E5E7EB;
+margin-top:60px;
+}
+
+.footer-content{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.footer-content p{
+color:#6B7280;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-12px);}
+100%{transform:translateY(0);}
+}
+
+@media(max-width:992px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-left p{
+font-size:18px;
+line-height:1.9;
+color:#6B7280;
+max-width:560px;
+margin-bottom:40px;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+.steps,
+.features-grid{
+grid-template-columns:1fr;
+}
+
+.impact-card{
+flex-direction:column;
+gap:35px;
+}
+
+.footer-content{
+flex-direction:column;
+gap:20px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-left h1{
+font-size:64px;
+font-weight:700;
+line-height:1.1;
+letter-spacing:-2px;
+color:#1F2937;
+margin-bottom:25px;
+max-width:620px;
+}
+.section-heading h2{
+font-size:32px;
+}
+
+.cta-card{
+padding:40px 25px;
+}
+
+}
