@@ -6,7 +6,7 @@ import loginImage from "../../assets/images/login.svg";
 import {FaEye,FaEyeSlash} from "react-icons/fa";
 
 
-const API="http://localhost:5000/api";
+const API = import.meta.env.VITE_API_URL;
 
 export default function Login(){
 
